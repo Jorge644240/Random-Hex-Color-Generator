@@ -5,5 +5,5 @@ document.querySelector("button").addEventListener("click", () => {
         newColor += values[Math.floor(Math.random()*15)];
     }
     document.querySelector("body").style.backgroundColor = `#${newColor}`;
-    document.querySelector(".center p:last-of-type span").innerHTML = document.querySelector("body").style.backgroundColor;
+    document.querySelector(".center p:last-of-type span").innerHTML = `#${newColor}`;
 });
